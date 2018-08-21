@@ -8,7 +8,19 @@ import { Component } from '@angular/core';
 })
 
 export class SandboxComponent{
-    imageUrl = '../../assets/pic.png';
-    isUnchanged:boolean = false;
+    isSpecial = true;
+    canSave = true;
+    currentClasses = {};
+
+    constructor(){
+        this.setCurrentClasses();
+    }
+
+    setCurrentClasses(){
+        this.currentClasses = {
+            saveable:this.canSave,
+            special: this.isSpecial
+        }
+    }
 }
 

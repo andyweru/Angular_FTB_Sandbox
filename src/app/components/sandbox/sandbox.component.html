@@ -1,17 +1,5 @@
-<!-- 3 ways to bind properties -->
+<h1>Hello World</h1>
 
-<!-- ------------------------------------------ -->
+<h4 [class.special]="isSpecial">This class binding is special. </h4>
 
-<!-- <div><img src="{{ imageUrl }}" alt=""></div>
-
-<div><img [src]="imageUrl"></div>
-
-<div><img bind-src="imageUrl" alt=""></div>
-
-<h4>Image Location: <span [textContent] = "imageUrl"></span></h4> -->
-
-<hr>
-
-<h2>Create Post</h2>
-<p [hidden]="isUnchanged">Post has been changed please save</p>
-<button [disabled] = "isUnchanged">save</button>
+<h4 [ngClass]="currentClasses">This div is initially special and savable</h4>
