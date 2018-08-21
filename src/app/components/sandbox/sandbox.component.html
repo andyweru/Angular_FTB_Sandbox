@@ -8,4 +8,13 @@
    <ng-template #noName>World</ng-template>
 
    <p>Hello {{ showName ? name: 'World'  }}</p>
+
+   <hr>
+
+   <div [ngSwitch]="greeting">
+       <div *ngSwitchCase="'1'">Hello</div>
+       <div *ngSwitchCase="'2'">Hi</div>
+       <div *ngSwitchCase="'3'">Hey</div>
+       <div *ngSwitchDefault>How are you?</div>
+   </div>
 </h1>

@@ -10,5 +10,6 @@ import { Component } from '@angular/core';
 export class SandboxComponent{
     name:string = 'John Doe';
     showName:boolean = true;
+    greeting:number = 2;
 }
 
