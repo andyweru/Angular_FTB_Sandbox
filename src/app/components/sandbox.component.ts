@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Customer } from './customer';
 
 @Component({
     selector:'sandbox',
@@ -6,19 +7,33 @@ import { Component } from '@angular/core';
 })
 
 export class SandboxComponent{
-    name:string = 'John Doe';
-    age:number = 35;
-    hasChildren:boolean = true;
-    myNumbersArray:number[] = [1,2,3];
-    myStringArray:string[] = ['hello', 'world'];
-    city:any = 'Boston';
-    myAnyArray:any[] = [1,2,3,"hello"];
-    myTuple: [string, number] = ['hello', 3];
-    unusable: void = undefined;
-    u: undefined = undefined;
-    n: null = null;
+    customer:Customer;
+    customers:Customer[];
 
     constructor(){
-        this.myNumbersArray = [1,2,3];
+      this.customer = {
+          id:1,
+          name:'John Doe',
+          email:'john@gmail.com'
+      }
+
+      this.customers = [
+        {
+            id:1,
+            name:'John Doe',
+            email:'john@gmail.com'
+        },
+        {
+            id:2,
+            name:'Brad Trav',
+            email:'bradT@gmail.com'
+        },
+        {
+            id:3,
+            name:'Young Wesh',
+            email:'youngW@gmail.com'
+        }
+      ];
     }
 }
+
