@@ -8,6 +8,7 @@ import { Component } from '@angular/core';
 })
 
 export class SandboxComponent{
-
+    name:string = '';
+    age:number = 0;
 }
 
