@@ -8,7 +8,6 @@ import { Component } from '@angular/core';
 })
 
 export class SandboxComponent{
-    birthday = new Date(1996, 10, 9);
-    percent = 0.45;
+
 }
 
