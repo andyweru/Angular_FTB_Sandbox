@@ -1,13 +1,11 @@
-<h1 class="special">Hello world from html file</h1>
-{{people}}
-<ul>
-    <li *ngFor="let person of people">{{person}}</li>
-</ul>
+<h1>
+   <span *ngIf="showName">Hello {{ name }}</span>
+   <span *ngIf="!showName">World</span>
 
-<ul>
-    <li *ngFor="let person of people; let i = index">{{i+1}} {{person}}</li>
-</ul>
+   <br><br>
 
-<ul>
-    <li *ngFor="let person of people2; let i = index">{{i+1}} {{person.firstName}} {{person.lastName}}</li>
-</ul>
+   <span *ngIf="showName; else noName">Hello {{ name }}</span>
+   <ng-template #noName>World</ng-template>
+
+   <p>Hello {{ showName ? name: 'World'  }}</p>
+</h1>
