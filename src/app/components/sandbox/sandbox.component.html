@@ -1,3 +1,8 @@
-<div [style.font-size]="isSpecial ? 'x-large' : 'smaller'">Font size depends on isSpecial </div>
+<p>My birthday is {{ birthday | date | uppercase}}</p> 
+<p>My birthday is {{ birthday | date:"MM-dd-yyyy"}}</p> 
+<p>My birthday is {{ birthday | date:"yyyy"}}</p> 
 
-<div [ngStyle]="currentStyles">This div is initially saveable and special</div>
+<p>I love {{ 'cake' | uppercase}}</p>
+<p>I love {{ 'CAKE' | lowercase}}</p>
+
+<p>Your total is {{ percent | percent }}</p>

@@ -8,19 +8,7 @@ import { Component } from '@angular/core';
 })
 
 export class SandboxComponent{
-    isSpecial = true;
-    canSave = true;
-    currentStyles = {};
-
-    constructor(){
-        this.setCurrentStyles();
-    }
-
-    setCurrentStyles(){
-        this.currentStyles = {
-            'font-style': this.canSave ? 'italic' : 'normal',
-            'font-size': this.isSpecial ? '24px' : '12px'
-        }
-    }
+    birthday = new Date(1996, 10, 9);
+    percent = 0.45;
 }
 
