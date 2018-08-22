@@ -9,14 +9,7 @@ import { DataService } from '../../services/data.service';
 })
 
 export class SandboxComponent{
-    data:any[] = [];
-
-    constructor(public dataServive: DataService){
-        this.dataServive.getData().subscribe(data => {
-            // console.log(data);
-            this.data.push(data);
-        });
-    }
+ 
  
 }
 
