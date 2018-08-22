@@ -10,6 +10,14 @@ import { DataService } from '../../services/data.service';
 
 export class SandboxComponent{
  
+    users:any[];
+
+    constructor(public dataService:DataService){
+        this.dataService.getUsers().subscribe(users => {
+            // console.log(users);
+            this.users = users;
+        })
+    }
  
 }
 
