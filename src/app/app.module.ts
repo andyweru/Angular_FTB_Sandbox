@@ -8,13 +8,15 @@ import { SandboxComponent } from './components/sandbox/sandbox.component';
 import { DataService } from './services/data.service';
 import { HomeComponent } from './components/home/home.component';
 import { AboutComponent } from './components/about/about.component';
+import { NavbarComponent } from './components/navbar/navbar.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     SandboxComponent,
     HomeComponent,
-    AboutComponent
+    AboutComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,
