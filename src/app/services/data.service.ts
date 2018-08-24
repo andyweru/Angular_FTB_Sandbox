@@ -25,4 +25,9 @@ export class DataService{
             .pipe(map(res => res.json()));
     }
 
+    updateUser(user){
+        return this.http.put('http://jsonplaceholder.typicode.com/users/'+user.id, user)
+            .pipe(map(res => res.json()));
+    }
+
 } 

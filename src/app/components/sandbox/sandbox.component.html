@@ -1,6 +1,6 @@
 <div class="container">
     <h1>Hello World</h1>
-<form action="" (submit) = "onSubmit()">
+<form action="" (submit) = "onSubmit(isEdit)">
     <div class="form-group">
         <label for="">Name</label>
         <input type="text" class="form-control" [(ngModel)] = "user.name" name="name ">
@@ -29,6 +29,9 @@
             <li class="list-group-item">Phone: {{ user.phone}}</li>
         </ul>
         <br><br>
+        
+        <button class="btn btn-primary btn-sm" (click)="onEditClick(user)">Edit</button>
+        
         <button class="btn btn-danger btn-sm" (click)="onDeleteClick(user.id)">Delete</button>
 
         <br><br><hr>
