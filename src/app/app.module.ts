@@ -7,12 +7,14 @@ import { AppComponent } from './app.component';
 import { SandboxComponent } from './components/sandbox/sandbox.component';
 import { DataService } from './services/data.service';
 import { HomeComponent } from './components/home/home.component';
+import { AboutComponent } from './components/about/about.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     SandboxComponent,
-    HomeComponent
+    HomeComponent,
+    AboutComponent
   ],
   imports: [
     BrowserModule,
