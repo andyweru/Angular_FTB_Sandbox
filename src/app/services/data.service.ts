@@ -15,4 +15,9 @@ export class DataService{
             .pipe(map(res => res.json()));
     }
 
+    adduser(user){
+        return this.http.post("http://jsonplaceholder.typicode.com/users", user)
+            .pipe(map(res => res.json()));
+    }
+
 } 

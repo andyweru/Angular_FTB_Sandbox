@@ -11,12 +11,24 @@ import { DataService } from '../../services/data.service';
 export class SandboxComponent{
  
     users:any[];
+    user = {
+        name:'',
+        email:'',
+        phone:''
+    }
 
     constructor(public dataService:DataService){
         this.dataService.getUsers().subscribe(users => {
             // console.log(users);
             this.users = users;
         })
+    }
+
+    onSubmit(){
+        this.dataService.adduser(this.user).subscribe(user => {
+            console.log(user);
+            this.users.unshift(user);
+        });
     }
  
 }
