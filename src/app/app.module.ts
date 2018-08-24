@@ -6,11 +6,13 @@ import { HttpModule} from '@angular/http';
 import { AppComponent } from './app.component';
 import { SandboxComponent } from './components/sandbox/sandbox.component';
 import { DataService } from './services/data.service';
+import { HomeComponent } from './components/home/home.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    SandboxComponent
+    SandboxComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
