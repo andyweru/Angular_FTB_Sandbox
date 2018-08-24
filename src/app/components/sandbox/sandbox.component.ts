@@ -30,6 +30,16 @@ export class SandboxComponent{
             this.users.unshift(user);
         });
     }
+
+    onDeleteClick(id){
+        this.dataService.deleteuser(id).subscribe(res => {
+            for(let i = 0; i < this.users.length; i++){
+                if(this.users[i].id == id){
+                    this.users.splice(i,1);
+                }
+            }
+        });
+    }
  
 }
 
